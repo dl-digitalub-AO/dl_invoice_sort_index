@@ -36,9 +36,9 @@ by sequential number instead of string-based sorting.
     'price': 12.00,
     'currency': 'USD',
     'images': [
-        'dl_invoice_sort_index/static/description/banner.png',
-        'dl_invoice_sort_index/static/description/screenshot1.png',
-        'dl_invoice_sort_index/static/description/screenshot2.png',
+        'static/description/banner.png',
+        'static/description/screenshot1.png',
+        'static/description/screenshot2.png',
     ],
     'installable': True,
     'application': False,
