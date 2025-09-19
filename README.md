@@ -1,17 +1,39 @@
-# DL Invoice Sort Index
+# 🔢 DL Invoice Sort Index
 
-Este módulo melhora a ordenação de faturas na lista, utilizando o número sequencial da fatura em vez da string completa.
+This module improves the sorting of invoices in Odoo by using the **sequential invoice number** instead of the default string-based sorting.
 
-## Funcionalidade
+---
 
-O Odoo, por padrão, ordena as faturas (account.move) pelo campo `name`, que é uma string. Isso pode levar a uma ordenação incorreta quando os números das faturas não têm o mesmo número de dígitos (por exemplo, `INV/2024/10` vem antes de `INV/2024/2`).
+## ✨ Features
+- Fixes incorrect ordering (e.g. `INV/2024/10` before `INV/2024/2`).
+- Adds a numeric index field `name_sort_index`.
+- Ensures invoices are listed and exported in **proper sequential order**.
 
-Este módulo resolve o problema adicionando um novo campo `name_sort_index` ao modelo `account.move`. Este campo armazena a parte numérica do nome da fatura como um inteiro. A ordenação padrão da lista de faturas é então alterada para usar este novo campo, garantindo que as faturas sejam ordenadas numericamente.
+---
 
-## Instalação
+## 📑 SAFT Compliance
+Proper invoice sequencing is **mandatory for SAFT validation**.  
+With this module, your invoices are exported in the correct order, ensuring compliance.
 
-Para instalar este módulo, coloque-o na sua pasta de addons e instale-o através da lista de Aplicações do Odoo.
+---
 
-## Autor
+## 📸 Screenshots
+1️⃣ Without the module → wrong order  
+2️⃣ With the module → correct sequential order  
 
-Digitalub
+---
+
+## ⚙️ Installation
+1. Copy the folder `dl_invoice_sort_index` into your Odoo addons path.  
+2. Restart your Odoo service.  
+3. Activate Developer Mode.  
+4. Go to **Apps** → Update Apps List.  
+5. Search for **DL Invoice Sort Index** and click **Install**.  
+
+---
+
+## 👤 Author
+**DIGITALUB ANGOLA, LDA** 🌍  
+📧 geral@digitalub.ao  
+🌐 [https://digitalub.ao](https://digitalub.ao)
+
